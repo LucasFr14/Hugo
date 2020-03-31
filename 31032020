@@ -1,0 +1,43 @@
+public class Escritor{  
+	private string nome; 
+	private int idade;
+	
+	public Escritor(String nome, int idade){
+		this.nome = nome;
+		this.idade = idade;
+	}
+	public String getNome(){
+		return nome;
+	}
+	public int getIdade(int idade){ 
+  
+		return idade;
+	}
+}
+
+public class livro{ 
+	private String titulo;
+	
+	public Livro(String titulo){
+		this.titulo = titulo;
+	}
+
+	public String getTitulo(){ 
+		return titulo;
+	}
+}
+
+public class App{
+	public static void main(String[] args){
+	Escritor escrit1 = new Escritor("Lucas",19);
+	Livro livro1 = new Livro("All the Bright Places");
+
+        ExibirDados(escrit1,livro1); 
+        
+	public static void ExibirDados(Escritor nome, Escritor idade, Livro titulo){
+		system.out.println("Nome" + escritor.getNome() + "Idade" + escritor.getIdade() + "Livro" + livro.getTitulo());
+	}
+	}
+} 
+
+	
